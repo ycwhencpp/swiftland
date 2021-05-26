@@ -2,6 +2,8 @@ body,html
 {
     height:100%;
     margin:0;
+    background-color:black;
+    
 }
 .image
 {
@@ -11,6 +13,7 @@ body,html
     background-repeat:no-repeat;
     background-size:cover;
       position:relative;
+
 }
 
  .conatiner-sm
@@ -65,11 +68,26 @@ h1
     font-size:45px;
     margin:20px;
 }
-h1:hover
+span:hover
 {
-    color:grey;
-    border:1px solid transparent;
-    font-size:300%;
-    font-weight:900;
+    color:grey ;
+
+
+
+
+}
+span{
+    opacity:0;
+    color:white;
+    transition: all 0.1s ease;
+    transform:translateY(50px);
+    transform:translateX(50px);
+    display:inline-block;
+}
+.design{
+    opacity:1;
+    transform:translateY(0);
+    transform:translateX(0);
+    transition:all 0.1s ease;
 
 }
