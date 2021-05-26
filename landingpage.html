@@ -8,29 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href ="landingpage.css" rel="stylesheet">
         <title>Taylor stan</title>
-        <script>
-            /// for displaying a dailouge box
-                document.addEventListener("DOMContentLoaded",function(){
-                    document.querySelector("#submit").addEventListener("click",function(){
-                  let name=document.querySelector("#name");
-                  if(name.value!=0)
-                  {
-                   alert(`Welcome ${name.value.toUpperCase()}!`);
-                  }
-                  else{
-                      alert("welcome the unknown guy!!");
-                  }
-                   }) ;
-
-               /// for toogling all the content hidden on mouse click
-                 let is_visible= true;
-                  document.querySelector("html").addEventListener("click",function(){
-                    is_visible = !is_visible;
-                   document.getElementById("submit").style.visibility= is_visible ? "visible": "hidden";
-                   document.getElementById("name").style.visibility= is_visible ? "visible": "hidden";
-                   document.getElementById("heading").style.visibility=is_visible ? "visible": "hidden"; });
-            });
-        </script>
+        <script src="landingpage.js"></script>
     </head>
     <body>
             <div class ="image">
@@ -43,7 +21,7 @@
 
               </input>
              <button id="submit">
-                 <a href="#">Let's Go</a>
+                 <a href="index.html">Let's Go</a>
                  </button>
          </div>
        </div>
